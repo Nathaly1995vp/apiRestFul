@@ -1,0 +1,12 @@
+create database Prueba
+create table PERSON(
+ID int auto_increment,
+IDENTIFICATION_NUMBER varchar(20) unique not null,
+FULLNAME varchar(100) not null,
+BIRTH date not null,
+IDMOTHER int,
+IDFATHER int,
+PRIMARY KEY (id),
+CONSTRAINT ID_FATHERFK FOREIGN KEY (IDMOTHER) REFERENCES PERSON(ID),
+CONSTRAINT ID_MOTHERFK FOREIGN KEY (IDFATHER) REFERENCES PERSON(ID)
+)ENGINE=InnoDB;

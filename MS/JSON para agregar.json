@@ -1,0 +1,10 @@
+{
+    "id": null,
+    "identificationNumber": "123",
+    "fullName": "Natha",
+    "birth": "2020-03-13",
+    "idMother": {
+        "id": 1//Opcional puede ser nulo, si envias datos, debe ser el ID de una persona existente
+    },
+    "idFather": null
+}
